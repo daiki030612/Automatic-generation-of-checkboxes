@@ -1,0 +1,10 @@
+function myFunction() {
+ var sheet = SpreadsheetApp.getActive().getSheetByName('‰c‹ÆŠ‘‡ƒf[ƒ^');
+ var currentRow = sheet.getActiveCell().getRow();
+ var currentCol = sheet.getActiveCell().getColumn();
+ var updateRangeTask = sheet.getRange('D' + currentRow);
+
+ if(currentRow > 2 && currentCol == 1){
+   updateRangeTask.insertCheckboxes();
+ }
+} 
